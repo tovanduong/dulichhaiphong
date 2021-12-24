@@ -1,0 +1,295 @@
+/* tablet and mobile  */
+@media only screen and (max-width: 991px){
+    .hideontabletmobile{
+        display: none;
+    }
+    .header{
+
+        height: 80px;
+    }
+    .backtomenu{
+        font-size: 16px;
+        padding-top: 40px;
+        font-weight: normal;
+        text-indent: 0px;
+        
+    }
+    .back{
+        text-decoration: none;
+        color: black;
+    }
+    .back:hover{
+        font-size: 20px;
+    }
+}
+/* tablet and pc  */
+@media only screen and (min-width: 767px){
+    .footer-content{
+        margin-left: 50px;
+    }
+    .content-subpage img{
+        padding-left: 30%;
+    }
+}
+/* mobile */
+@media only screen and (max-width: 767px){
+    .footer-content{
+        text-align: center;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 767px) and (max-width: 991px){
+    .content img{
+        display: block;
+        height: 100%;
+    }
+    .footer p{
+        max-width: 300px;
+        margin: 0px;
+    }
+    .footer .col-s-6{
+        height: 250px;
+    }
+
+}
+/* pc  */
+@media only screen and (min-width: 991px){
+    .hideondesktop{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .header h1{
+        font-size: 40px;
+        color: black;
+        padding-left: 50px;
+    }
+
+    .header .list{
+        display: flex;
+        width: auto;
+        justify-content: right;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .item-desktop{
+        display: flex;
+        height: 100%;
+        padding-left:20px;
+        padding-right: 20px;
+    }
+    .link-desktop{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: right;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+    }
+    .item-desktop:hover{
+        background-color: rgba(20, 6, 6, 0.5);
+    }
+    .content-desktop{
+        position: relative;
+        display: flex;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+    .col-l-3{
+        position: relative;
+    }
+    .view{
+        position: absolute;
+        display: none;
+        top: 60px;
+        right: -300px;
+        width: 300px;
+        height: auto;
+        background-color: grey;
+    }
+    .view-list{
+        padding: 0px;
+        margin: 0px;
+    }
+    .view-item{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        list-style: none;
+    }
+    .view-link{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+    .view-link:hover{
+        background-color: white;
+        color: black;
+    }
+    .showview:hover .view{
+        display: block;
+    }
+    
+    .content h1{
+        margin-left: 0px;
+    }
+    .content h2{
+        margin-left: 0px;
+    }
+    .content p{
+        text-indent: 30px;
+        padding-left: 0px;
+    }
+   
+    .content-list{
+        display: block;
+        border-radius: 10px;
+        width: 100%;
+        height: 2850px;
+        padding: 0px;
+        margin: 0px;    
+        background-color: rgba(0, 0, 0, 0.5);  
+        
+    }
+    .content-item{
+        display: flex;
+        height: 60px;
+        width: 100%;
+        list-style: none;
+        
+    }
+    .content-link{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: left;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding-left: 70px;
+    }
+    .content-link:hover:not(.active){
+        background-color: white;
+        color: black;
+    }
+    .active{
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-size: 25px;
+    }   
+    .content H3{
+        font-size: 14px;
+        /* text-indent: 0px; */
+        line-height: 40px;
+    }
+    .content address{
+        text-indent: 0px;
+    }
+
+    .back{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 300;
+        color: black;
+    }
+    .back:hover{
+        font-size: 16px;
+    }
+    
+    .content .content-infor{
+        display: block;
+        flex-direction: column;
+        align-self: stretch;
+        text-indent: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        font-size: 16px;
+        color: white;
+        line-height: 30px;
+    }
+    .setting{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .item-setting{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0px 10px 0px;
+        list-style: none;
+        font-size: 20px;
+    }
+    .link-setting{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: normal;
+    }
+    .item-setting li{
+        display: block;
+        width: 150px;
+        height: 100%;
+        /* padding-top: 10px; */
+        padding-bottom: 10px;
+        padding-left: 20px;
+        list-style: none;
+        font-size: 20px;
+    }
+    .item-setting ul{
+        display: block;
+        width: 180px;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 20px;
+        
+    }
+    .item-setting text{
+        width: 60px;
+    }
+    .link-setting:hover{
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .option-pc h3{
+        text-align: left;
+        font-weight: normal;
+        font-size: 20px;
+        /* padding: 20px 0px 10px 20px; */
+        margin: 0px;
+    }
+    .option-pc ul{
+        display: block;
+        text-align: left;
+    }
+    .option-pc li{
+        list-style: none;
+        padding-top: 5px;
+        padding-right: 20px;
+        /* padding-bottom: 10px; */
+        /* margin-bottom: 20px; */
+        font-weight: normal;
+        font-size: 20px;
+        padding-left: 50px
+    }
+    .nhanthongbao{
+        display: block;
+        width: 200px;
+        height: 100%;
+    }
+}

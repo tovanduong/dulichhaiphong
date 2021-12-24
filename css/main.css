@@ -1,0 +1,922 @@
+/* ======================header================== */
+.header{
+    width: 100%;
+    height: auto;
+    background-color: orange;
+}
+.header h1{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.header .list{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.link{
+    display: flex;
+    height: 100%;
+    font-family: serif;
+    text-decoration: none;
+}
+
+.item link .header-content-icon{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+.item{
+    display: flex;
+   
+}
+.list .header-content-icon{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 40px;
+}
+
+.nav-overlay{
+    display: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadein linear 0.3s;
+    z-index: 2;
+}
+.nav-mobile{
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    top:0px;
+    left: 0px;
+    right: 300px;
+    bottom: 0px;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: gray;
+    transform: translateX(-100%);
+    transition: transform linear 0.2s;
+    z-index: 2;
+}
+.nav-list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.nav-item{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    background-color: white;
+}
+.nav-item .nav-link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    padding-left: 60px;
+    justify-content: left;
+    align-items: center;
+}
+.nav-item .nav-link:hover
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.nav-mobile h2{
+    font-size: 30px;
+    padding-left: 50px;
+}
+.nav-mobile .nav-icon-close{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+}
+.nav-input:checked ~ .nav-overlay{
+    display: block;
+}
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0%);
+}
+.nav-tablist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.set-mobile{
+    display: none;
+    position: fixed;
+    left: 300px;
+    top: 95px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(185, 185, 185);
+}
+.setting-mobile{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+.item-setting-mobile{
+    list-style: none;
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+}
+.option:first-child{
+    margin-left: 20px;
+}
+.link-setting-mobile{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.link-setting-mobile:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.option h3{
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 20px 0px 10px 20px;
+    margin: 0px;
+}
+.option ul{
+    display: block;
+    text-align: left;
+}
+.option li{
+    list-style: none;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.hienthi-caidat:hover .set-mobile{
+    display: block;
+}
+.thamquan{
+    display: none;
+    position: fixed;
+    left: 300px;
+    top: 386px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(185, 185, 185);
+}
+.hienthi-thamquan:hover .thamquan{
+        display: block;
+}
+.list-thamquan{
+    display: block;
+    padding: 0px;
+}
+.item-thamquan{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: left;
+}
+.link-thamquan{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+}
+.link-thamquan:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5) ;
+}
+.search-overlay{
+    position: fixed;
+    top: 123.781px;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: fadein linear 0.3s;
+    z-index: 2;
+}
+.search-input{
+    display: flex;
+    position: fixed;
+    top: 84px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(78, 76, 76);
+    width: 100%;
+    height: 40px;
+    display: none;
+    z-index: 2;
+}
+.search-text{
+    display: flex;
+    border: 2px solid black ;
+    width: 80%;
+    padding-left: 15px;
+    border: 0px;
+    margin: 0px;
+    background-color: white;
+    color: black;
+    z-index: 2;
+}
+.search-btn{
+    display: flex;
+    width: 20%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 1;
+}
+.search-btn:hover{
+    cursor: pointer;
+    font-size: 25px;
+    background-color: rgba(0, 255, 0);
+}
+.search-check:checked ~ .search-overlay{
+    display: block;
+}
+.search-check:checked ~ .search-input{
+    display: flex;
+}
+/* =====content=========== */
+
+.content{
+    position: relative;
+    display: block;
+}
+.content a{
+    text-decoration: none;
+}
+.content h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    margin: 10px auto 10px 20px ;
+}
+.content h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px auto 10px 20px ;
+}
+.content p{
+    font-size: 16px;
+    padding-left: 10px;
+    width: 100%;
+}
+.content img{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+hr{
+    display: flex;
+    width: 60%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.content-main-pc{
+    color: black;
+}
+/* ====================footer========================= */
+.footer{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(247, 243, 243);
+}
+.footer-content{
+    /* padding-left: 50px; */
+    text-align: left;
+    color: black;
+    margin-left: 0px;
+}
+.footer-content img{
+    padding: 0px 30px 10px 0px;
+}
+.footer-link{
+    text-decoration: none;
+    color: black;
+}
+.footer-icon{
+    padding-right: 10px;
+}
+
+/*========================= login =============================*/
+.nen{
+    background-image: url(../img/ảnh\ nền\ login.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.title-login{
+    position: fixed;
+    font-family: 'Cookie', cursive;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: auto;
+    /* background-color: burlywood; */
+    color: rgb(15, 15, 15);
+    font-size: 28px;
+}
+.title-login h1{
+    margin: 0px;
+    margin-right: 20px;
+}
+.login{
+    font-family: 'Cookie', cursive;
+    position: relative;
+    top: 140px;
+    left: 80px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 400px;
+    max-width: 550px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.login H4{
+    text-align: center;
+    font-size: 70px;
+    margin: 20px 0px 20px 0px;
+    color: white;
+}
+.login .user{
+    padding-left: 55px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+.login input{
+    /* margin-left: 20px; */
+    width: 80%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+#remember{
+    /* margin-top: 10px ; */
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.login label{
+    display: flex;
+    height: 100%;
+    width: 190px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    color: white;
+    font-size: 20px;
+}
+.login button{
+    font-family: 'Cookie';
+    /* margin-left: 20px; */
+    width: 80%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.check1{
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 55px;
+}
+.check1 a{
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
+}
+.check1 a:hover{
+    font-size: 22px;
+}
+label:hover,
+#remember:hover{
+    cursor: pointer;
+}
+button:hover{
+    background-color: greenyellow;
+    font-size: 30px;
+    cursor: pointer;
+}
+.dash{
+    display: flex;
+    width: 20%;
+    height: 1px;
+    background-color: black;
+}
+.or{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-left: 120px;
+    align-items: center;
+}
+.or p{
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+.mxh{
+    display: flex;
+    width: 100%;  
+    justify-content: space-around;
+}
+.icon-mxh{
+    margin-right: 10px;
+}
+.login-mxh{
+    display: block;
+    width: 250px;
+    height: 100%;
+    padding: 0px;
+}
+.login-mxh button{
+    padding: 0px;
+    margin: 0px;
+}
+.login-mxh button:hover{
+    background-color: steelblue;
+}
+/* ===========sign in========== */
+.nen1{
+    position: relative;
+    background-image: url(../img/ảnh\ nền\ sign.jpeg);
+}
+.title-sign{
+    position: fixed;
+    font-family: 'Cookie', cursive;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: auto;
+    /* background-color: burlywood; */
+    color: greenyellow;
+
+    font-size: 40px;
+}
+.title-sign h1{
+    margin: 0px;
+    margin-right: 20px;
+}
+.sign{
+    font-family: 'Cookie', cursive;
+    position: relative;
+    top: 140px;
+    left: 80px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 400px;
+    max-width: 550px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.sign h4{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0px 20px 0px;
+    color: white;
+}
+.sign input{
+    width: 80%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.day input{
+        width: 200px;
+        height: 40px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+}
+.day{
+    text-align: left;
+    margin-left: 45px;
+    font-size: 20px;
+    height: 50px;
+}
+.day p{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+.gioitinh{
+    text-align: left;
+    margin-left: 45px;
+    font-size: 20px;
+}
+.gioitinh input{
+    width: 20px;
+    height: 14px;
+    margin-top: 10px;
+    padding-right: 10px;
+    margin-left: 50px;
+}
+.gioitinh label{
+    height: 20px;
+    color: white;
+}
+.gioitinh p{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+.term{
+    text-align: left;
+    margin-left: 45px;
+    font-size: 16px;
+    color: white;
+}
+.term a{
+    text-decoration: none;
+    padding-left: 5px;
+    color: white;
+}
+.sign-btn button{
+    font-family: 'Cookie';
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.sign-btn button:hover{
+    background-color: rgb(71, 255, 47);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ==========tim phong khach san============= */
+.nen3{
+    background-image: url(../img/khachsan2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.title-findhotel{
+    position: fixed;
+    font-family: 'Cookie', cursive;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: auto;
+    /* background-color: burlywood; */
+    color: greenyellow;
+
+    font-size: 40px;
+}
+.title-findhotel h1{
+    margin: 0px;
+    margin-right: 20px;
+    font-size: 50px;
+    color: white;
+}
+.findhotel{
+    font-family: 'Cookie', cursive;
+    position: absolute;
+    top: 140px;
+    left: 80px;
+    /* border: 1px solid grey; */
+    width: 40%;
+    min-width: 800px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.findhotel h4{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0px 20px 0px;
+    color: white;
+}
+h5{
+    margin-left: 20px;
+    color: white;
+}
+.location{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.location-input{
+    height: 40px;
+    width: 80%;
+    margin-left: 35px;
+}
+.time{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.time-tro{
+    margin-left: 30px;
+    margin-right: 40px;
+    width: 100px;
+    height: 30px;
+}
+
+.soluong{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.sl1{
+    margin-left: 10px;
+    margin-right: 40px;
+    width: 100px;
+    height: 30px;
+}
+.sl2{
+    margin-left: 18px;
+    margin-right: 40px;
+    width: 100px;
+    height: 30px;
+}
+.sl3{
+    margin-left: 4px;
+    margin-right: 40px;
+    width: 100px;
+    height: 30px;
+}
+.pay{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.tt{
+    margin-left: 20px;
+}
+.btn{
+    width: 100%;
+    height: 30px;
+}
+.btn button{
+    width: 40%;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    font-size: 25px;
+}
+.newposition{
+        margin-top: 50px;
+        color: white;
+}
+
+/* ========taxi======= */
+.nen5{
+    background-image: url(../img/taxi.jpg);
+    background-size: 100% 100%;
+}
+.title-taxi{
+    position: fixed;
+    font-family: 'Cookie', cursive;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: auto;
+    /* background-color: burlywood; */
+    color: greenyellow;
+
+    font-size: 40px;
+}
+.title-taxi h1{
+    margin: 0px;
+    margin-right: 20px;
+    font-size: 50px;
+    color: white;
+}
+.taxi-table{
+    display: flex;
+    width: 100%;
+    height: auto;
+}  
+.content-table {
+    margin-left: 10%;
+    border-collapse: collapse;
+    margin-top: 140px;
+    font-size: 0.9em;
+    width: 80%;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   
+}
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+} 
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: normal;
+} 
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:nth-of-type(odd){
+    background-color: white;
+} 
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+/* ====help=== */
+.nen6{
+    background-image: url(../img/help.jpg);
+    background-size: 100% 100%;
+}
+.title-help{
+    position: fixed;
+    font-family: 'Cookie', cursive;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: auto;
+    font-size: 40px;
+}
+.title-help h1{
+    margin: 0px;
+    margin-left: 20px;
+    font-size: 50px;
+    color: white;
+}
+.help{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 100px;
+    left: 40px;
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    text-align: center;
+}
+.help h4{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 30px;
+}
+.help input{
+    width: 80%;
+    height: 50px;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.help button{
+    margin-top: 30px;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+}
+/* ========change password========== */
+.nen7{
+    background-image: url(../img/ảnh\ nền\ login.jpg);
+    background-size: 100% 100%;
+}
+.title-change{
+    position: fixed;
+    font-family: 'Cookie', cursive;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: auto;
+    font-size: 40px;
+}
+.title-change h1{
+    margin: 0px;
+    margin-right: 20px;
+    font-size: 50px;
+    color: black;
+}
+.change h4{
+    color: white;
+    font-size: 30px;
+}
+.change{
+    font-family: 'Cookie', cursive;
+    position: relative;
+    display: block;
+    top: 140px;
+    left: 80px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 400px;
+    max-width: 550px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.change input{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.change button{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+/* ======content-subpage===== */
+.subpage{
+    display: block;
+
+    width: 100%;
+    /* padding-left: 200px; */
+}
+.content-subpage{
+    margin-left: 30px;
+    line-height: 20px;   
+}
+.content-subpage h1{
+    margin: 0px;
+}
+.content-subpage p{
+    /* padding-left: 200px; */
+    text-indent: 10px;
+    max-width: 95%;
+}
+.content-subpage img{
+    display: flex;
+    /* padding-left: 20%; */
+    padding-bottom: 20px;
+}

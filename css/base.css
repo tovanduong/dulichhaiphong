@@ -1,0 +1,21 @@
+html{
+    /* width: 100%; */
+    max-width: 1900px;
+    margin: auto;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+body{
+    display: block;
+    margin: 0px;
+    max-width: 1900px;
+}
+@font-face {
+    font-family: "Roboto" ;
+    src: url('../font/roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: "Cookie" ;
+    src: url('../font/cookie/Cookie-Regular.ttf');
+}
