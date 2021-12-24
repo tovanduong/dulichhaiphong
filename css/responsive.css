@@ -89,10 +89,10 @@
         justify-content: right;
         text-decoration: none;
         font-size: 20px;
-        color: white;
+        color: black;
     }
-    .item-desktop:hover{
-        background-color: rgba(20, 6, 6, 0.5);
+    .link-desktop:hover{
+        color: blue;
     }
     .content-desktop{
         position: relative;
