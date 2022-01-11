@@ -25,18 +25,14 @@
 /* tablet and pc  */
 @media only screen and (min-width: 767px){
     .footer-content{
+        text-align: left;
         margin-left: 50px;
     }
     .content-subpage img{
         padding-left: 30%;
     }
 }
-/* mobile */
-@media only screen and (max-width: 767px){
-    .footer-content{
-        text-align: center;
-    }
-}
+
 /* tablet */
 @media only screen and (min-width: 767px) and (max-width: 991px){
     .content img{
@@ -287,9 +283,5 @@
         font-size: 20px;
         padding-left: 50px
     }
-    .nhanthongbao{
-        display: block;
-        width: 200px;
-        height: 100%;
-    }
+
 }
