@@ -24,6 +24,12 @@
 }
 /* tablet and pc  */
 @media only screen and (min-width: 767px){
+    .content__title {
+        padding-left: 25px;
+    }
+    .content__addr {
+        padding-left: 25px;
+    }
     .footer-content{
         text-align: left;
         margin-left: 50px;
@@ -37,7 +43,7 @@
 @media only screen and (min-width: 767px) and (max-width: 991px){
     .content img{
         display: block;
-        height: 100%;
+        /* height: 100%; */
     }
     .footer p{
         max-width: 300px;
@@ -48,6 +54,7 @@
     }
 
 }
+
 /* pc  */
 @media only screen and (min-width: 991px){
     .hideondesktop{
@@ -150,7 +157,7 @@
         display: block;
         border-radius: 10px;
         width: 100%;
-        height: 2850px;
+        height: 3100px;
         padding: 0px;
         margin: 0px;    
         background-color: rgba(0, 0, 0, 0.5);  
@@ -266,7 +273,6 @@
         text-align: left;
         font-weight: normal;
         font-size: 20px;
-        /* padding: 20px 0px 10px 20px; */
         margin: 0px;
     }
     .option-pc ul{
@@ -277,11 +283,15 @@
         list-style: none;
         padding-top: 5px;
         padding-right: 20px;
-        /* padding-bottom: 10px; */
-        /* margin-bottom: 20px; */
         font-weight: normal;
         font-size: 20px;
         padding-left: 50px
     }
 
+}
+/* tablet 13inch */
+@media only screen and (min-width: 1279px) and (max-width: 1440px){
+    .content-list{
+        height: 2515px;
+    }
 }

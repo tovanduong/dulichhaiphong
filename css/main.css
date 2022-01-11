@@ -229,7 +229,9 @@
     display: flex;
 }
 /* =====content=========== */
-
+.container-content  img {
+    width: 100%;
+}
 .content{
     position: relative;
     display: block;
@@ -254,7 +256,7 @@
     width: 100%;
 }
 .content img{
-    width: 100%;
+    /* width: 100%; */
     padding-top: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -268,6 +270,10 @@ hr{
 .content-main-pc{
     color: black;
 }
+.content-image {
+    text-align: center;
+}
+
 /* ====================footer========================= */
 .footer{
     display: block;

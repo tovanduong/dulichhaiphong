@@ -37,45 +37,46 @@
   </header>
 
   <main>
-    <input type="checkbox" hidden name="" class="nav-input" id="check">
-    <label for="check" class="nav-overlay"></label>
-    <div class="nav-mobile">
-      <H2>Menu</H2>
-      <label for="check" class="nav-icon-close"><i class="fas fa-times"></i></label>
-      <hr>
-      <ul class="nav-list">
-        <li class="nav-item hienthi-caidat"><a class="nav-link" href="#">
-            Cài đặt: hệ thống
-          </a>
-        </li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="./subpage/taxi.html">Liên hệ Taxi</a></li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="./subpage/hotel.html">Tìm phòng khách sạn</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#gioithieu">Giới thiệu</a></li>
-        <li class="nav-item hienthi-thamquan">
-          <a class="nav-link" href="#">
-            Tham quan
-          </a>
-          <div class="thamquan">
-            <ul class="list-thamquan">
-              <li class="item-thamquan"><a class="link-thamquan" href="#doson">Bãi biển Đồ Sơn</a></li>
-              <li class="item-thamquan"><a class="link-thamquan" href="#trangtrinh">khu di tích Trạng Trình</a></li>
-              <li class="item-thamquan"><a class="link-thamquan" href="#nuivoi">Núi Voi</a></li>
-              <li class="item-thamquan"><a class="link-thamquan" href="#bachlongvi">Đảo Bạch Long Vĩ</a></li>
-              <li class="item-thamquan"><a class="link-thamquan" href="#catba">Đảo Cát Bà</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item"><a class="nav-link" target="_blank" href="./subpage/help.html">Help</a></li>
-      </ul>
-    </div>
-    <input type="checkbox" hidden class="search-check" name="" id="search">
-    <label for="search" class="search-overlay"></label>
-    <div class="search-input">
-      <input class="search-text" type="text" placeholder="Bạn tìm gì nhỉ ?">
-      <input type="button" class="search-btn" value="Tìm kiếm">
-    </div>
-
+    <nav id="mobile-menu">
+      <input type="checkbox" hidden name="" class="nav-input" id="check">
+      <label for="check" class="nav-overlay"></label>
+      <div class="nav-mobile">
+        <H2>Menu</H2>
+        <label for="check" class="nav-icon-close"><i class="fas fa-times"></i></label>
+        <hr>
+        <ul class="nav-list">
+          <li class="nav-item hienthi-caidat"><a class="nav-link" href="#">
+              Cài đặt: hệ thống
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" target="_blank" href="./subpage/taxi.html">Liên hệ Taxi</a></li>
+          <li class="nav-item"><a class="nav-link" target="_blank" href="./subpage/hotel.html">Tìm phòng khách sạn</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#gioithieu">Giới thiệu</a></li>
+          <li class="nav-item hienthi-thamquan">
+            <a class="nav-link" href="#">
+              Tham quan
+            </a>
+            <div class="thamquan">
+              <ul class="list-thamquan">
+                <li class="item-thamquan"><a class="link-thamquan" href="#doson">Bãi biển Đồ Sơn</a></li>
+                <li class="item-thamquan"><a class="link-thamquan" href="#trangtrinh">khu di tích Trạng Trình</a></li>
+                <li class="item-thamquan"><a class="link-thamquan" href="#nuivoi">Núi Voi</a></li>
+                <li class="item-thamquan"><a class="link-thamquan" href="#bachlongvi">Đảo Bạch Long Vĩ</a></li>
+                <li class="item-thamquan"><a class="link-thamquan" href="#catba">Đảo Cát Bà</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" target="_blank" href="./subpage/help.html">Help</a></li>
+        </ul>
+      </div>
+      <input type="checkbox" hidden class="search-check" name="" id="search">
+      <label for="search" class="search-overlay"></label>
+      <div class="search-input">
+        <input class="search-text" type="text" placeholder="Bạn tìm gì nhỉ ?">
+        <input type="button" class="search-btn" value="Tìm kiếm">
+      </div>
+    </nav>
     <!-- content -->
     <div class="content">
       <div class="row">
@@ -169,179 +170,237 @@
           </ul>
         </div>
         <!-- do son -->
-        <div class="col-12 col-s-12 col-l-0">
-          <H1 id="doson"><a target="_blank" href="./subpage/doson.html" class="content-main-pc">Bãi biển Đồ Sơn</a></H1>
-          <h2>Địa chỉ: Khu du lịch Đồ Sơn, Vạn Hương, Đồ Sơn, Hải Phòng.</h2>
-        </div>
-        <div class="col-12 col-s-6 col-l-5">
-          <img src="./img/bãi biển Đồ Sơn.jpg" height="382px" alt="bãi biển Đồ Sơn">
-          <p><cite>Bãi biển Đồ Sơn.</cite> photo in 2019.</p>
-        </div>
-        <div class="col-12 col-s-6 col-l-4">
-          <H1 class="hideontabletmobile"><a target="_blank" href="./subpage/doson.html" class="content-main-pc">Bãi biển
-              Đồ Sơn</a></H1>
-          <h2 class="hideontabletmobile">Địa chỉ: Khu du lịch Đồ Sơn, Vạn Hương, Đồ Sơn, Hải Phòng.</h2>
-          <p>Bãi biển Đồ Sơn được biết đến là một trong những bãi biển đẹp nhất tại miền Bắc. Vì vậy, nếu bạn có dịp ghé
-            thăm Hải Phòng thì đừng bỏ lỡ điểm du lịch này. Bãi biển này được chia làm các khu I, II và III, tuy nhiên,
-            nhiều du khách chủ yếu tắm biển và vui chơi ở khu II vì đây là khu vực tắm đẹp, biển thoai thoải, cát mịn.
-          </p>
-          <p>Không chỉ thỏa sức vui chơi với nhiều hoạt động trên biển, điểm du lịch ở Hải Phòng này còn hấp dẫn du
-            khách bởi nhiều món ăn hải sản thơm ngon, tươi sống. Hệ thống nhà hàng tại đây cũng rất đa dạng, du khách có
-            thể dễ dàng thưởng thức những bữa ăn ngon, giá rẻ cùng với gia đình. </p>
-          <p>Nếu bạn đang tìm kiếm các điểm du lịch Hải Phòng về biển thì bãi biển Đồ Sơn chắc chắn sẽ là lựa chọn ưu
-            tiên hàng đầu cho chuyến đi lý tưởng nhất.</p>
-        </div>
-        <!-- trangtrinh -->
-        <hr id="trangtrinh">
-        <div class="col-12 col-s-12 col-l-0">
-          <H1><a target="_blank" href="./subpage/trangtrinh.html" class="content-main-pc">Khu di tích Trạng Trình Nguyễn
-              Bỉnh Khiêm</a></H1>
-          <h2>Địa chỉ: Thôn Trung Am, Lý Học, Vĩnh Bảo, Hải Phòng.</h2>
-        </div>
-        <div class="col-12 col-s-6 col-l-5">
-          <img src="./img/Khu di tích Trạng Trình.jpg" height="382px" alt="Khu di tích Trạng Trình">
-          <p><cite>Đền trạng trình.</cite> photo in 2018.</p>
-        </div>
-        <div class="col-12 col-s-6 col-l-4">
-          <H1 class="hideontabletmobile"><a target="_blank" href="./subpage/trangtrinh.html" class="content-main-pc">Khu
-              di tích Trạng Trình Nguyễn Bỉnh Khiêm</a></H1>
-          <h2 class="hideontabletmobile">Địa chỉ: Thôn Trung Am, Lý Học, Vĩnh Bảo, Hải Phòng.</h2>
-          <p>Đi du lịch quanh Hải Phòng với rất nhiều điểm đến, các quán ăn ngon sẽ khiến cho bạn quên hết mệt mỏi của
-            cuộc sống. Một trong các điểm du lịch Hải Phòng không thể thiếu trong lịch trình tham quan thành phố đó
-            chính là khu di tích Trạng Trình. Đây là một trong số ít nơi còn lưu giữ nhiều kỷ vật độc đáo, mang đậm ý
-            nghĩa lịch sử đối với các thân thế, sự nghiệp của cuộc đời Nguyễn Bỉnh Khiêm.</p>
-          <p>Tham quan khu di tích này, du khách có thể lần lượt ghé thăm nhiều công trình khác nhau như: Tháp Bút Kình
-            Thiên, đền thờ, hai gian hậu cung, chùa Song Mai, hồ bán nguyệt… Từng hạng mục công trình tại đây đều chứa
-            đựng những câu chuyện lịch sử rất ý nghĩa và linh thiêng. Điểm đến này chắc chắn sẽ giúp cho bạn và gia đình
-            có được nhiều hiểu biết thêm về văn hóa lịch sử. </p>
-          <p>Điều đặc biệt là bên trong của khu di tích này được xây dựng với nhiều không gian xanh, vườn tượng. Bên
-            cạnh đó, nhiều bức tượng có kích thước tương đương với người thật ghi lại hình ảnh về cuộc đời, quá trình
-            dạy học của Nguyễn Bỉnh Khiêm. Đây là một trong các điểm du lịch Hải Phòng có khung cảnh khá sống động và
-            gần gũi. </p>
-        </div>
-        <!-- nuivoi -->
-        <hr id="nuivoi">
-        <div class="col-12 col-s-12 col-l-0">
-          <H1><a target="_blank" href="./subpage/nuivoi.html" class="content-main-pc">Núi Voi</a></H1>
-          <h2>Địa chỉ: Xã An Tiến, huyện An Lão, Hải Phòng. </h2>
-        </div>
-        <div class="col-12 col-s-6 col-l-5">
-          <img src="./img/Núi Voi.jpg" alt="Núi Voi">
-          <p><cite>Núi Voi.</cite> photo in 2020.</p>
-        </div>
-        <div class="col-12 col-s-6 col-l-4">
-          <H1 class="hideontabletmobile"><a target="_blank" href="./subpage/nuivoi.html" class="content-main-pc">Núi
-              Voi</a></H1>
-          <h2 class="hideontabletmobile">Địa chỉ: Xã An Tiến, huyện An Lão, Hải Phòng. </h2>
-          <p>Một trong những điểm du lịch ở Hải Phòng phù hợp với các chuyến đi ngắn ngày đó chính là Núi Voi. Đây là
-            ngọn núi cao nhất ở Hải Phòng nằm cạnh bên bờ sông Lạch Tray. Với nhiều du khách, đây là một danh lam thắng
-            cảnh thơ mộng đáng để trải nghiệm trong hành trình tham quan thành phố hoa phượng đỏ. Bên cạnh đó, đây cũng
-            là địa điểm lưu giữ nhiều nét đẹp về văn hóa, lịch sử và những giá trị văn hóa dân gian độc đáo. </p>
-          <p>Tại núi Voi, du khách có thể tham quan rất nhiều hang động tuyệt đẹp như Hang Voi, hang Chiêng, hang Bể…
-            Hầu hết những hang động này còn rất hoang sơ, chính vì vậy bạn có thể thỏa sức khám phá nét đẹp kỳ vĩ, độc
-            đáo mà thiên nhiên mang lại. </p>
-          <p>Ngoài ra, núi Voi còn là nơi giúp cho bạn dễ dàng kết nối với các điểm du lịch Hải Phòng khác như: chùa
-            Long Hoa, chùa Chi Lai, đền thờ nữ tướng Lê Chân… Nếu bạn có dịp ghé thăm núi Voi vào các dịp lễ hội sẽ được
-            chứng kiến nhiều hơn các hoạt động văn hóa dân gian, lễ tế … để hiểu hơn về cuộc sống, văn hóa sinh hoạt của
-            người dân nơi đây. </p>
-          <div class="backtomenu">
-            <i class="far fa-hand-point-right"></i>
-            <a class="back" href="#menu">Back to menu.</a>
+        <div class="container-content">
+          <div class="col-12 col-s-12 col-l-9">
+            <div>
+              <H1 class="content__title"><a target="_blank" href="./subpage/doson.html" class="content-main-pc">Bãi
+                  biển
+                  Đồ Sơn</a></H1>
+              <h2 class="content__addr">Địa chỉ: Khu du lịch Đồ Sơn, Vạn Hương, Đồ Sơn, Hải Phòng.</h2>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 content-image">
+              <img src="./img/bãi biển Đồ Sơn.jpg" alt="bãi biển Đồ Sơn">
+              <p><cite>Bãi biển Đồ Sơn.</cite> photo in 2019.</p>
+            </div>
+            <div class="col-12 col-s-6 col-l-6">
+              <p>Bãi biển Đồ Sơn được biết đến là một trong những bãi biển đẹp nhất tại miền Bắc. Vì vậy, nếu bạn có dịp
+                ghé
+                thăm Hải Phòng thì đừng bỏ lỡ điểm du lịch này. Bãi biển này được chia làm các khu I, II và III, tuy
+                nhiên,
+                nhiều du khách chủ yếu tắm biển và vui chơi ở khu II vì đây là khu vực tắm đẹp, biển thoai thoải, cát
+                mịn.
+              </p>
+              <p>Không chỉ thỏa sức vui chơi với nhiều hoạt động trên biển, điểm du lịch ở Hải Phòng này còn hấp dẫn du
+                khách bởi nhiều món ăn hải sản thơm ngon, tươi sống. Hệ thống nhà hàng tại đây cũng rất đa dạng, du
+                khách
+                có
+                thể dễ dàng thưởng thức những bữa ăn ngon, giá rẻ cùng với gia đình. </p>
+              <p>Nếu bạn đang tìm kiếm các điểm du lịch Hải Phòng về biển thì bãi biển Đồ Sơn chắc chắn sẽ là lựa chọn
+                ưu
+                tiên hàng đầu cho chuyến đi lý tưởng nhất.</p>
+            </div>
+            <div class="backtomenu">
+              <i class="far fa-hand-point-right"></i>
+              <a class="back" href="#menu">Back to menu.</a>
+            </div>
           </div>
         </div>
-
+        <!-- trangtrinh -->
+        <div class="container-content">
+          <hr id="trangtrinh">
+          <div class="col-12 col-s-12 col-l-9">
+            <div>
+              <H1 class="content__title"><a target="_blank" href="./subpage/trangtrinh.html"
+                  class="content-main-pc">Trạng
+                  trình Nguyễn Bỉnh Khiêm</a></H1>
+              <h2 class="content__addr">Địa chỉ: Đền Trạng Trình, xã Lý Học, Vĩnh Bảo, Hải Phòng.</h2>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 content-image">
+              <img src="./img/Khu di tích Trạng Trình.jpg" alt="Trạng trình.">
+              <p><cite>Trạng trình.</cite> photo in 2019.</p>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 ">
+              <p>Đi du lịch quanh Hải Phòng với rất nhiều điểm đến, các quán ăn ngon sẽ khiến cho bạn quên hết mệt mỏi
+                của
+                cuộc sống. Một trong các điểm du lịch Hải Phòng không thể thiếu trong lịch trình tham quan thành phố đó
+                chính là khu di tích Trạng Trình. Đây là một trong số ít nơi còn lưu giữ nhiều kỷ vật độc đáo, mang đậm
+                ý
+                nghĩa lịch sử đối với các thân thế, sự nghiệp của cuộc đời Nguyễn Bỉnh Khiêm.</p>
+              <p>Tham quan khu di tích này, du khách có thể lần lượt ghé thăm nhiều công trình khác nhau như: Tháp Bút
+                Kình
+                Thiên, đền thờ, hai gian hậu cung, chùa Song Mai, hồ bán nguyệt… Từng hạng mục công trình tại đây đều
+                chứa
+                đựng những câu chuyện lịch sử rất ý nghĩa và linh thiêng. Điểm đến này chắc chắn sẽ giúp cho bạn và gia
+                đình
+                có được nhiều hiểu biết thêm về văn hóa lịch sử. </p>
+              <p>Điều đặc biệt là bên trong của khu di tích này được xây dựng với nhiều không gian xanh, vườn tượng. Bên
+                cạnh đó, nhiều bức tượng có kích thước tương đương với người thật ghi lại hình ảnh về cuộc đời, quá
+                trình
+                dạy học của Nguyễn Bỉnh Khiêm. Đây là một trong các điểm du lịch Hải Phòng có khung cảnh khá sống động
+                và
+                gần gũi. </p>
+            </div>
+            <div class="backtomenu">
+              <i class="far fa-hand-point-right"></i>
+              <a class="back" href="#menu">Back to menu.</a>
+            </div>
+          </div>
+        </div>
+        <!-- nuivoi -->
+        <div class="container-content">
+          <hr id="nuivoi">
+          <div class="col-12 col-s-12 col-l-9">
+            <div>
+              <H1 class="content__title"><a target="_blank" href="./subpage/nuivoi.html" class="content-main-pc">Núi
+                  Voi</a></H1>
+              <h2 class="content__addr">Địa chỉ: Xã An Tiến, huyện An Lão, Hải Phòng.</h2>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 content-image">
+              <img src="./img/Núi Voi.jpg" alt="Núi Voi">
+              <p><cite>Núi Voi.</cite> photo in 2020.</p>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 ">
+              <p>Một trong những điểm du lịch ở Hải Phòng phù hợp với các chuyến đi ngắn ngày đó chính là Núi Voi. Đây
+                là
+                ngọn núi cao nhất ở Hải Phòng nằm cạnh bên bờ sông Lạch Tray. Với nhiều du khách, đây là một danh lam
+                thắng
+                cảnh thơ mộng đáng để trải nghiệm trong hành trình tham quan thành phố hoa phượng đỏ. Bên cạnh đó, đây
+                cũng
+                là địa điểm lưu giữ nhiều nét đẹp về văn hóa, lịch sử và những giá trị văn hóa dân gian độc đáo. </p>
+              <p>Tại núi Voi, du khách có thể tham quan rất nhiều hang động tuyệt đẹp như Hang Voi, hang Chiêng, hang
+                Bể…
+                Hầu hết những hang động này còn rất hoang sơ, chính vì vậy bạn có thể thỏa sức khám phá nét đẹp kỳ vĩ,
+                độc
+                đáo mà thiên nhiên mang lại. </p>
+              <p>Ngoài ra, núi Voi còn là nơi giúp cho bạn dễ dàng kết nối với các điểm du lịch Hải Phòng khác như:
+                chùa
+                Long Hoa, chùa Chi Lai, đền thờ nữ tướng Lê Chân… Nếu bạn có dịp ghé thăm núi Voi vào các dịp lễ hội
+                sẽ
+                được
+                chứng kiến nhiều hơn các hoạt động văn hóa dân gian, lễ tế … để hiểu hơn về cuộc sống, văn hóa sinh
+                hoạt
+                của
+                người dân nơi đây. </p>
+              <div class="backtomenu">
+                <i class="far fa-hand-point-right"></i>
+                <a class="back" href="#menu">Back to menu.</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- bachlongvi -->
-        <hr id="bachlongvi">
-        <div class="col-12 col-s-12 col-l-0">
-          <H1><a target="_blank" href="./subpage/bachlongvi.html" class="content-main-pc">Đảo Bạch Long Vĩ</a></H1>
-          <h2>Địa chỉ: Đảo Bạch Long Vỹ, Hải Phòng.</h2>
-        </div>
-        <div class="col-12 col-s-6 col-l-5">
-          <img src="./img/Đảo Bạch Long Vĩ.jpg" alt="Đảo Bạch Long Vĩ">
-          <p><cite>Đảo Bạch Long Vĩ.</cite> photo in 2017.</p>
-        </div>
-        <div class="col-12 col-s-6 col-l-4">
-          <H1 class="hideontabletmobile"><a target="_blank" href="./subpage/bachlongvi.html" class="content-main-pc">Đảo
-              Bạch Long Vĩ</a></H1>
-          <h2 class="hideontabletmobile">Địa chỉ: Đảo Bạch Long Vỹ, Hải Phòng.</h2>
-          <p>Nếu bạn muốn khám phá hòn đảo xa nhất tại Vịnh Bắc Bộ thì đừng quên ghé đảo Bạch Long Vỹ tại Hải Phòng. Hòn
-            đảo này cách đất liền lên tới 110km. Tại đây có rất nhiều vùng bãi triều, bãi biển khá hoang sơ thuận tiện
-            cho việc du lịch và khám phá của du khách. </p>
-          <p>Đến với điểm du lịch Hải Phòng này, du khách đừng quên tham quan ngọn hải đăng có độ cao lên tới 80 mét.
-            Bạn có thể leo lên tầng cao nhất của hải đăng và chiêm ngưỡng sự bao la của đất trời biển cả. Đây cũng là
-            điểm check-in lý tưởng giúp bạn có được những tấm hình độc – lạ nhất. </p>
-          <p>Tại đảo Bạch Long Vỹ còn có điểm du lịch là chùa Bạch Long Tự, nơi đây nổi tiếng với sự uy nghiêm, cổ kính.
-            Khung cảnh bình yên và thanh tịnh của ngôi chùa này sẽ giúp bạn thư giãn, hòa mình vào nơi linh thiêng của
-            cửa Phật. Đảo Bạch Long Vỹ được xem là một trong các điểm du lịch ở Hải Phòng phù hợp với dân phượt hay
-            những chuyến du lịch ngắn ngày. </p>
-          <div class="backtomenu">
-            <i class="far fa-hand-point-right"></i>
-            <a class="back" href="#menu">Back to menu.</a>
+        <div class="container-content">
+          <hr id="bachlongvi">
+          <div class="col-12 col-s-12 col-l-9">
+            <div>
+              <H1 class="content__title"><a target="_blank" href="./subpage/bachlongvi.html" class="content-main-pc">Đảo
+                  Bạch Long Vĩ</a></H1>
+              <h2 class="content__addr">Địa chỉ: Đảo Bạch Long Vỹ, Hải Phòng.</h2>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 content-image">
+              <img src="./img/Đảo Bạch Long Vĩ.jpg" alt="Đảo Bạch Long Vĩ">
+              <p><cite>Đảo Bạch Long Vĩ.</cite> photo in 2017.</p>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 ">
+              <p>Nếu bạn muốn khám phá hòn đảo xa nhất tại Vịnh Bắc Bộ thì đừng quên ghé đảo Bạch Long Vỹ tại Hải
+                Phòng. Hòn
+                đảo này cách đất liền lên tới 110km. Tại đây có rất nhiều vùng bãi triều, bãi biển khá hoang sơ
+                thuận
+                tiện
+                cho việc du lịch và khám phá của du khách. </p>
+              <p>Đến với điểm du lịch Hải Phòng này, du khách đừng quên tham quan ngọn hải đăng có độ cao lên tới 80
+                mét.
+                Bạn có thể leo lên tầng cao nhất của hải đăng và chiêm ngưỡng sự bao la của đất trời biển cả. Đây
+                cũng
+                là
+                điểm check-in lý tưởng giúp bạn có được những tấm hình độc – lạ nhất. </p>
+              <p>Tại đảo Bạch Long Vỹ còn có điểm du lịch là chùa Bạch Long Tự, nơi đây nổi tiếng với sự uy nghiêm,
+                cổ
+                kính.
+                Khung cảnh bình yên và thanh tịnh của ngôi chùa này sẽ giúp bạn thư giãn, hòa mình vào nơi linh
+                thiêng
+                của
+                cửa Phật. Đảo Bạch Long Vỹ được xem là một trong các điểm du lịch ở Hải Phòng phù hợp với dân phượt
+                hay
+                những chuyến du lịch ngắn ngày. </p>
+              <div class="backtomenu">
+                <i class="far fa-hand-point-right"></i>
+                <a class="back" href="#menu">Back to menu.</a>
+              </div>
+            </div>
           </div>
         </div>
         <!-- catba -->
-        <br>
-        <hr id="catba">
-        <div class="col-12 col-s-12 col-l-0">
-          <H1><a target="_blank" href="./subpage/catba.html" class="content-main-pc">Đảo Cát Bà</a></H1>
-          <h2>Địa chỉ: Huyện đảo Cát Bà, Hải Phòng. </h2>
-        </div>
-        <div class="col-12 col-s-6 col-l-5">
-          <img src="./img/Đảo Cát Bà.jpg" alt="Đảo Cát Bà">
-          <p><cite>Đảo Cát Bà.</cite> photo in 2020.</p>
-        </div>
-        <div class="col-12 col-s-6 col-l-4">
-          <H1 class="hideontabletmobile"><a target="_blank" href="./subpage/catba.html" class="content-main-pc">Đảo Cát
-              Bà</a></H1>
-          <h2 class="hideontabletmobile">Địa chỉ: Huyện đảo Cát Bà, Hải Phòng. </h2>
-          <p>Cát Bà là một huyện đảo cách trung tâm thành phố Hải Phòng khoảng 9km. Trong những dịp hè, lượng du khách
-            đến tham quan khu du lịch Hải Phòng này rất đông. Thời điểm này, du khách có thể thỏa sức vui chơi dưới làn
-            nước trong lành, thiên nhiên tươi mát. Cát Bà được thiên nhiên ưu ái với thời tiết mát mẻ quanh năm. Vì vậy
-            đây cũng là điểm đến lý tưởng trong các điểm du lịch Hải Phòng được du khách quan tâm khi đến với thành phố
-            này. </p>
-          <div class="backtomenu">
-            <i class="far fa-hand-point-right"></i>
-            <a class="back" href="#menu">Back to menu.</a>
+        <div class="container-content">
+          <br>
+          <hr id="catba">
+          <div class="col-12 col-s-12 col-l-9">
+            <div>
+              <H1 class="content__title"><a target="_blank" href="./subpage/catba.html" class="content-main-pc">Đảo
+                  Cát Bà</a></H1>
+              <h2 class="content__addr">Địa chỉ: Huyện đảo Cát Bà, Hải Phòng.</h2>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 content-image">
+              <img src="./img/Đảo Cát Bà.jpg" alt="Đảo Cát Bà">
+              <p><cite>Đảo Cát Bà.</cite> photo in 2020.</p>
+            </div>
+            <div class="col-12 col-s-6 col-l-6 ">
+              <p>Cát Bà là một huyện đảo cách trung tâm thành phố Hải Phòng khoảng 9km. Trong những dịp hè, lượng du
+                khách
+                đến tham quan khu du lịch Hải Phòng này rất đông. Thời điểm này, du khách có thể thỏa sức vui chơi
+                dưới làn
+                nước trong lành, thiên nhiên tươi mát. Cát Bà được thiên nhiên ưu ái với thời tiết mát mẻ quanh năm.
+                Vì vậy
+                đây cũng là điểm đến lý tưởng trong các điểm du lịch Hải Phòng được du khách quan tâm khi đến với
+                thành phố
+                này. </p>
+              <div class="backtomenu">
+                <i class="far fa-hand-point-right"></i>
+                <a class="back" href="#menu">Back to menu.</a>
+              </div>
+            </div>
+            <hr>
           </div>
         </div>
-        <hr>
       </div>
-    </div>
-    <!-- footer -->
-    <footer class="footer">
-      <div class="row footer-content">
-        <div class="col-12 col-s-6 col-l-0">
-          <h3 id="gioithieu">Giới thiệu website</h3>
-          <p>Du lịch Hải Phòng là website giới thiệu về văn hoá, ẩm thực, danh lam thắng cảnh và con người Hải Phòng.
-            Giúp các bạn có trải nghiệm du lịch Hải Phòng 1 cách tốt nhất.
-            <address>
-              Website developed by Tô Văn Dương.<br>
-              Visit me at:<br>
-              https://www.facebook.com/duong.tovan.522/<br>
-              Vinh Bao street, Hai Phong city<br>
-              Viet Nam.
-            </address>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="row footer-content">
+          <div class="col-12 col-s-6 col-l-0">
+            <h3 id="gioithieu">Giới thiệu website</h3>
+            <p>Du lịch Hải Phòng là website giới thiệu về văn hoá, ẩm thực, danh lam thắng cảnh và con người Hải
+              Phòng.
+              Giúp các bạn có trải nghiệm du lịch Hải Phòng 1 cách tốt nhất.
+              <address>
+                Website developed by Tô Văn Dương.<br>
+                Visit me at:<br>
+                https://www.facebook.com/duong.tovan.522/<br>
+                Vinh Bao street, Hai Phong city<br>
+                Viet Nam.
+              </address>
+          </div>
+          <div class="col-12 col-s-6 col-l-4">
+            <h4>Theo dõi chúng tôi trên</h4>
+            <p><a class="footer-link" href="#"><i class="fab fa-facebook footer-icon"></i>facebook</a></p>
+            <p><a class="footer-link" href="#"><i class="fab fa-instagram-square footer-icon"></i>instagram</a>
+            </p>
+            <p class="apps"><a class="footer-link" href="#"><i class="fab fa-twitter footer-icon"></i>twitter</a>
+            </p>
+          </div>
+          <div class="col-12 col-s-6 col-l-4">
+            <h4>Tải ứng dụng ngay thôi nào:</h4>
+            <a href="#"><img src="./img/appstore.png" alt="appstore"></a><br>
+            <a href="#"><img src="./img/google play.png" alt="google play"></a><br>
+            <a href="#"><img src="./img/app gallery.png" alt="app gallery"></a><br>
+          </div>
+          <div class="col-12 col-s-6 col-l-4">
+            <h4>Liên hệ chúng tôi qua</h4>
+            <p>SĐT: 0123456789.</p>
+            <p>Email: duongtvfx12432@funix.edu.vn</p>
+            <p>Địa chỉ: số nhà 54, phường 3/2, huyện Vĩnh Bảo, thành phố Hải Phòng.</p>
+          </div>
         </div>
-        <div class="col-12 col-s-6 col-l-4">
-          <h4>Theo dõi chúng tôi trên</h4>
-          <p><a class="footer-link" href="#"><i class="fab fa-facebook footer-icon"></i>facebook</a></p>
-          <p><a class="footer-link" href="#"><i class="fab fa-instagram-square footer-icon"></i>instagram</a></p>
-          <p class="apps"><a class="footer-link" href="#"><i class="fab fa-twitter footer-icon"></i>twitter</a></p>
-        </div>
-        <div class="col-12 col-s-6 col-l-4">
-          <h4>Tải ứng dụng ngay thôi nào:</h4>
-          <a href="#"><img src="./img/appstore.png" alt="appstore"></a><br>
-          <a href="#"><img src="./img/google play.png" alt="google play"></a><br>
-          <a href="#"><img src="./img/app gallery.png" alt="app gallery"></a><br>
-        </div>
-        <div class="col-12 col-s-6 col-l-4">
-          <h4>Liên hệ chúng tôi qua</h4>
-          <p>SĐT: 0123456789.</p>
-          <p>Email: duongtvfx12432@funix.edu.vn</p>
-          <p>Địa chỉ: số nhà 54, phường 3/2, huyện Vĩnh Bảo, thành phố Hải Phòng.</p>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </main>
 </body>
 
